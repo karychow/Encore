@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encore — The energy copilot for dancers</title>
+<meta name="description" content="Encore reads your rehearsal load, cycle and fuelling together and spots the early signs of low energy availability, so you can fix things long before they become an injury.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="#top" class="logo">Encore</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#principles">Our principles</a>
+      <a href="#clinicians">For clinicians</a>
+      <a href="#waitlist" class="btn btn-accent btn-sm">Join the waitlist</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="top" class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">The energy copilot for dancers</p>
+      <h1>Dance this season, <em>and the next.</em></h1>
+      <p class="lede">Encore reads your rehearsal load, cycle and fuelling together and spots the early signs of low energy availability, so you can fix things long before they become an injury.</p>
+
+      <form class="waitlist-form" id="waitlistForm" novalidate>
+        <div class="role-select" role="radiogroup" aria-label="I am a">
+          <button type="button" class="role-pill is-active" data-role="dancer" role="radio" aria-checked="true">I'm a dancer</button>
+          <button type="button" class="role-pill" data-role="school" role="radio" aria-checked="false">Teacher or school</button>
+          <button type="button" class="role-pill" data-role="clinician" role="radio" aria-checked="false">Clinician</button>
+        </div>
+        <input type="hidden" name="role" id="roleField" value="dancer">
+
+        <div class="email-row" id="emailRow">
+          <label for="hero-email" class="sr-only">Email address</label>
+          <input type="email" id="hero-email" name="email" placeholder="you@company.com" required>
+          <button type="submit" class="btn btn-accent">Join the waitlist</button>
+        </div>
+        <div class="joined-msg" id="joinedMsg" hidden role="status">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>
+          You're on the list. We'll be in touch before the pilot opens.
+        </div>
+      </form>
+
+      <ul class="trust-badges">
+        <li>No calorie counting</li>
+        <li>No weigh ins</li>
+        <li>Built with registered dietitians</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="ring ring-outer"></div>
+      <div class="ring ring-inner"></div>
+      <div class="ring ring-core"></div>
+      <div class="card-stack">
+        <div class="phone-card phone-card--accent">
+          <div class="dial">
+            <div class="dial-inner">Steady</div>
+          </div>
+          <div class="phone-card-text">
+            <span class="label-caps">Fuel balance</span>
+            <span>Well fuelled around class this week.</span>
+          </div>
+        </div>
+        <div class="phone-card phone-card--suggest">
+          <span class="label-caps accent-text">Encore suggests</span>
+          <span>Long rehearsal at 14:00. Pack something easy for the 16:00 break.</span>
+        </div>
+        <div class="phone-card phone-card--checkin">
+          <span class="muted">Weekly check-in</span>
+          <span class="accent-text strong">Shared with your dietitian</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Why it matters</p>
+        <h2>Dancers are taught to push through. <em>Their bodies keep count.</em></h2>
+        <p class="section-lede">When the energy you take in doesn't keep up with what training asks of you, your body starts saving it elsewhere. That can affect your bones, your cycle, your mood and your performance, often quietly, until something gives.</p>
+      </div>
+      <div class="card-grid">
+        <div class="info-card">
+          <h3>Cycle changes</h3>
+          <p>A late, lighter or missing period is one of the clearest early signals, and one of the most often brushed off.</p>
+        </div>
+        <div class="info-card">
+          <h3>Niggles that linger</h3>
+          <p>Bone pain or injuries that keep coming back can point to under fuelling, not just overuse.</p>
+        </div>
+        <div class="info-card">
+          <h3>Energy and mood</h3>
+          <p>Heavy legs in class, poor sleep and feeling flat are easy to blame on the schedule. Sometimes they are telling you more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="how wrap">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>A minute a day. <em>A clearer picture.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Check in</h3>
+        <p>Log class, rehearsals and shows, plus a few quick questions on sleep, energy and your cycle. No food diaries.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Encore connects the dots</h3>
+        <p>Your copilot reads the patterns across load, cycle and fuelling, and gives practical, dancer friendly suggestions backed by REDs research.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Your care team stays close</h3>
+        <p>When something needs a closer look, Encore helps you share a clear summary with your dietitian or physio, only if you choose to.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="principles" class="principles">
+    <div class="wrap">
+      <h2>Designed for dancers, <em>with care.</em></h2>
+      <div class="principle-grid">
+        <div class="principle">
+          <h3>No calorie counting</h3>
+          <p>We talk about fuelling and timing, never numbers on a plate.</p>
+        </div>
+        <div class="principle">
+          <h3>No weigh ins</h3>
+          <p>Encore never asks for or shows your weight.</p>
+        </div>
+        <div class="principle">
+          <h3>Evidence first</h3>
+          <p>Guidance is grounded in the IOC consensus on REDs and reviewed by registered dietitians.</p>
+        </div>
+        <div class="principle">
+          <h3>Your data is yours</h3>
+          <p>Nothing is shared with your school or company unless you say so.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="clinicians" class="clinicians wrap">
+    <div class="clinicians-copy">
+      <p class="eyebrow">For clinicians and schools</p>
+      <h2>See the whole week, <em>not just the appointment.</em></h2>
+      <p class="section-lede">Dietitians, physios and dance schools can support dancers between sessions with consented, structured summaries.</p>
+      <a href="#waitlist" class="btn btn-outline">Partner with us</a>
+    </div>
+    <div class="clinicians-card">
+      <div class="feature-row">
+        <span class="feature-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg>
+        </span>
+        <div>
+          <h3>Weekly signal summaries</h3>
+          <p>Load, cycle, sleep and energy trends in one view.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <span class="feature-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>
+        </span>
+        <div>
+          <h3>Early flags</h3>
+          <p>Prompts to review aligned with established REDs screening tools, so you know who to see first.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <span class="feature-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        </span>
+        <div>
+          <h3>Consent at every step</h3>
+          <p>Dancers choose exactly what is shared, and with whom.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="waitlist" class="cta wrap">
+    <div class="cta-panel">
+      <h2>Be part of the <em>first company.</em></h2>
+      <p>We're opening a small pilot with dancers, schools and clinicians soon. Join the waitlist to hear first.</p>
+      <a href="#top" class="btn btn-accent btn-lg">Join the waitlist</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <div class="footer-brand">
+      <div class="logo">Encore</div>
+      <p>Encore supports, and never replaces, care from a qualified clinician. It is not a diagnostic tool. If you are worried about your health, please speak to your GP, dietitian or physio.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#">Privacy</a>
+      <a href="#">Contact</a>
+      <a href="#">Instagram</a>
+      <span class="copyright">© 2026 Encore</span>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
