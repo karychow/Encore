@@ -21,6 +21,7 @@
     </button>
     <nav class="primary-nav" id="primaryNav" aria-label="Primary">
       <a href="#how">How it works</a>
+      <a href="#demo">See it in action</a>
       <a href="#principles">Our principles</a>
       <a href="#clinicians">For clinicians</a>
       <a href="#waitlist" class="btn btn-accent btn-sm">Join the waitlist</a>
@@ -131,6 +132,38 @@
         <div class="step-num">03</div>
         <h3>Your care team stays close</h3>
         <p>When something needs a closer look, Encore helps you share a clear summary with your dietitian or physio, only if you choose to.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo" class="demo wrap">
+    <div class="section-head">
+      <p class="eyebrow">See it in action</p>
+      <h2>A real check-in, <em>start to finish.</em></h2>
+      <p class="section-lede">Two minutes of questions, plus whatever your wearable already knows. No numbers shown to you, start to finish.</p>
+    </div>
+    <div class="demo-grid">
+      <div class="demo-checkin">
+        <div class="demo-progress" id="demoProgress" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="demo-question" id="demoQuestion"></div>
+      </div>
+
+      <div class="wearable-card">
+        <div class="wearable-head">
+          <span class="label-caps">Wearable sync</span>
+          <button type="button" role="switch" id="wearableToggle" class="switch is-on" aria-checked="true" aria-label="Sync wearable data">
+            <span class="knob"></span>
+          </button>
+        </div>
+        <ul class="wearable-list" id="wearableList">
+          <li><span>Heart rate variability</span><span class="status">Synced</span></li>
+          <li><span>Resting heart rate</span><span class="status">Synced</span></li>
+          <li><span>Sleep last night</span><span class="status">7h 10m</span></li>
+          <li><span>Today's training load</span><span class="status">From your schedule</span></li>
+        </ul>
+        <p class="wearable-note" id="wearableNote">Updates quietly in the background while you answer. No wearable? The check-in alone is enough.</p>
       </div>
     </div>
   </section>
