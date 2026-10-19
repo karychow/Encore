@@ -115,24 +115,53 @@
   <section id="how" class="how wrap">
     <div class="section-head">
       <p class="eyebrow">How it works</p>
-      <h2>A minute a day. <em>A clearer picture.</em></h2>
+      <h2>From a weekly check-in, <em>to a plan you can trust.</em></h2>
+      <p class="section-lede">Two minutes a week, read by your copilot, with a real person deciding anything that matters.</p>
     </div>
-    <div class="steps">
-      <div class="step">
+
+    <div class="flow-spine">
+      <div class="flow-node">
         <div class="step-num">01</div>
-        <h3>Check in</h3>
-        <p>Log class, rehearsals and shows, plus a few quick questions on sleep, energy and your cycle. No food diaries, and your first fuelling tip lands straight away.</p>
+        <h3>Weekly check-in</h3>
+        <p>Quick questions on fuelling, energy, cycle and any niggles, plus whatever your wearable already knows. No food diaries, no numbers.</p>
       </div>
-      <div class="step">
+      <div class="flow-arrow" aria-hidden="true">↓</div>
+      <div class="flow-node">
         <div class="step-num">02</div>
-        <h3>Encore connects the dots</h3>
-        <p>Your copilot reads the patterns across load, cycle and fuelling, and gives practical, dancer friendly suggestions backed by dance health research.</p>
+        <h3>Encore reads the pattern</h3>
+        <p>Load, cycle, sleep and fuelling, read together over time, not any one answer on its own.</p>
       </div>
-      <div class="step">
+      <div class="flow-arrow" aria-hidden="true">↓</div>
+    </div>
+
+    <div class="flow-branch" role="tablist" aria-label="What happens next">
+      <button type="button" class="branch-tab is-active" role="tab" aria-selected="true" aria-controls="flowPathClear" data-path="clear">All clear</button>
+      <button type="button" class="branch-tab" role="tab" aria-selected="false" aria-controls="flowPathFlag" data-path="flag">Worth a closer look</button>
+    </div>
+
+    <div class="flow-path" id="flowPathClear" role="tabpanel">
+      <div class="flow-node flow-node--outcome">
         <div class="step-num">03</div>
-        <h3>Your care team stays close</h3>
-        <p>When something needs a closer look, Encore helps you share a clear summary with your dietitian or physio, only if you choose to.</p>
+        <h3>You keep going</h3>
+        <p>Fuelling and recovery guidance for the week ahead, and your next check-in picks up where this one left off. Most weeks end here.</p>
       </div>
+      <p class="flow-loop">↺ Back to your weekly check-in</p>
+    </div>
+
+    <div class="flow-path" id="flowPathFlag" role="tabpanel" hidden>
+      <div class="flow-node flow-node--outcome">
+        <div class="step-num">03</div>
+        <h3>A practitioner takes a look</h3>
+        <span class="flow-badge">Reviewed by a person, not an algorithm</span>
+        <p>A registered dietitian or your care team sees a clear, structured summary, never raw numbers or food logs, and decides what happens next.</p>
+      </div>
+      <div class="flow-arrow" aria-hidden="true">↓</div>
+      <div class="flow-node flow-node--outcome">
+        <div class="step-num">04</div>
+        <h3>Recovery, if it's needed</h3>
+        <p>If something's confirmed, you move into recovery mode. Encore tracks what matters: energy, sleep, mood, training tolerance and whether your cycle returns to normal, until you're back to full training.</p>
+      </div>
+      <p class="flow-loop">↺ Back to your weekly check-in, now with a plan behind it</p>
     </div>
   </section>
 

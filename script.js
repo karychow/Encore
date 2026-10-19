@@ -49,6 +49,23 @@
     joinedMsg.hidden = false;
   });
 
+  var branchTabs = document.querySelectorAll('.branch-tab');
+  branchTabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      branchTabs.forEach(function (t) {
+        t.classList.remove('is-active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('is-active');
+      tab.setAttribute('aria-selected', 'true');
+
+      var targetId = tab.getAttribute('aria-controls');
+      document.querySelectorAll('.flow-path').forEach(function (panel) {
+        panel.hidden = panel.id !== targetId;
+      });
+    });
+  });
+
   var demoQuestions = [
     {
       prompt: "Did you fuel around today's rehearsal?",

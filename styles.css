@@ -415,30 +415,96 @@ a:focus-visible {
 .info-card h3, .info-card p { margin: 0; }
 .info-card p { font-size: 15px; }
 
-.steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-}
-
-.step {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  border-top: 1px solid var(--ring-inner);
-  padding-top: 24px;
-}
-
 .step-num {
   font-family: var(--serif);
-  font-size: 56px;
+  font-size: 44px;
   font-style: italic;
   line-height: 1;
   color: var(--accent);
 }
 
-.step h3, .step p { margin: 0; }
-.step p { font-size: 15px; }
+/* How it works: branching flow */
+.flow-spine, .flow-path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.flow-node {
+  width: 100%;
+  background: var(--surface);
+  border-radius: 24px;
+  padding: 28px 32px;
+  box-shadow: 0 16px 40px rgba(70, 50, 80, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flow-node h3, .flow-node p { margin: 0; }
+.flow-node p { font-size: 15px; }
+
+.flow-node--outcome { background: var(--surface-alt-2); box-shadow: none; }
+
+.flow-arrow {
+  font-size: 22px;
+  color: var(--ring-inner);
+  line-height: 1;
+  padding: 6px 0;
+}
+
+.flow-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  background: var(--surface-alt);
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.flow-branch {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 28px auto 32px;
+  max-width: 640px;
+}
+
+.branch-tab {
+  flex: 1;
+  height: 52px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.branch-tab.is-active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+
+.flow-path { gap: 0; }
+.flow-path[hidden] { display: none; }
+.flow-path .flow-node { margin-bottom: 0; }
+
+.flow-loop {
+  margin: 18px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-mute);
+}
 
 /* Demo */
 .demo { padding: 96px 24px; }
